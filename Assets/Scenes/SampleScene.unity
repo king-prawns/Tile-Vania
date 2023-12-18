@@ -479,7 +479,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -503,7 +503,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.48215, y: -2.3619146, z: -10}
+  m_LocalPosition: {x: 16.484013, y: -1.3586192, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -620,7 +620,7 @@ TilemapRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.016129017, y: 0.016129017, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -13272,7 +13272,7 @@ TilemapRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.016129017, y: 0.016129017, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -19514,6 +19514,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2136844434011008348, guid: 55a1c86c916f64872bc7ae9ceffb812c, type: 3}
+      propertyPath: deathKick.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136844434011008348, guid: 55a1c86c916f64872bc7ae9ceffb812c, type: 3}
+      propertyPath: deathKick.y
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4217882284793255517, guid: 55a1c86c916f64872bc7ae9ceffb812c, type: 3}
       propertyPath: m_Name
       value: Ginger (Player)
