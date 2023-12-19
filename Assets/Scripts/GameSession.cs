@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
+    [SerializeField] int score = 0;
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
 
@@ -27,6 +27,7 @@ public class GameSession : MonoBehaviour
 
     void Start() {
         livesText.text = playerLives.ToString();
+        scoreText.text = score.ToString();
     }
 
     public void ProcessPlayerDeath()
@@ -39,6 +40,12 @@ public class GameSession : MonoBehaviour
         {
             ResetGameSession();
         }
+    }
+
+    public void AddToScore(int pointsToAdd)
+    {
+        score += pointsToAdd;
+        scoreText.text = score.ToString();
     }
 
     void ResetGameSession()
